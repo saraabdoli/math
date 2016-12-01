@@ -40,22 +40,7 @@ int iResult =iNumber1 + iNumber2;
 
 }
 
-    public void Taghsim(View view){
 
-String b;
-        String sNumber1 = textNumber1.getText().toString();
-        String sNumber2 = textNumber2.getText().toString();
-
-        int iNumber1 =Integer.parseInt(sNumber1);
-        int iNumber2 =Integer.parseInt(sNumber2);
-
-        int iResult =iNumber1 / iNumber2;
-
-
-     b =  String.valueOf(iResult);
-
-
-    }
     public void manfi (View view){
         String sNumber1 = textNumber1.getText().toString();
         String sNumber2 = textNumber2.getText().toString();
@@ -70,22 +55,56 @@ String b;
 
     }
 
-    public void xarb(View view){
-        String sNumber1 = textNumber1.getText().toString();
-        String sNumber2 = textNumber2.getText().toString();
-
-        int iNumber1 =Integer.parseInt(sNumber1);
-        int iNumber2 =Integer.parseInt(sNumber2);
-
-        int iResult =iNumber1 * iNumber2;
 
 
-        b =  String.valueOf(iResult);
+    public void buttonaddClicked(View view) {
+
+
+
+
+
+            txtResult1.setText(b);
+
+
 
     }
 
-    public void mosavi(View view ){
+    public void taghsim(View view) {
 
-        txtResult1.setText(b);
+
+            String b;
+            String sNumber1 = textNumber1.getText().toString();
+            String sNumber2 = textNumber2.getText().toString();
+
+            int iNumber1 =Integer.parseInt(sNumber1);
+            int iNumber2 =Integer.parseInt(sNumber2);
+
+            int iResult =iNumber1 / iNumber2;
+
+
+            b =  String.valueOf(iResult);
+
+
+
+    }
+
+    public void xarb(View view) {
+
+
+            String sNumber1 = textNumber1.getText().toString();
+            String sNumber2 = textNumber2.getText().toString();
+
+            int iNumber1 =Integer.parseInt(sNumber1);
+            int iNumber2 =Integer.parseInt(sNumber2);
+
+            int iResult =iNumber1 * iNumber2;
+
+
+            b =  String.valueOf(iResult);
+
+
+
+
+
     }
 }
